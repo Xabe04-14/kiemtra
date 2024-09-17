@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        width: 800px;
+        border: 3px solid rgb(7, 108, 7);
+        margin: 0 auto;
+        padding: 10px;
+        background-color: rgb(231, 231, 162);
+
+    }
+    h1{
+        text-align:center
+    }
+    p{
+        /* display: flex; */
+        margin: 30px;
+
+    }
+    label{
+        font-weight:bold;
+        
+    }
+    input{
+        height: 30px;
+        width: 250px;
+        float: right;
+        margin-right:350px;
+        background-color:rgb(231, 231, 162);
+    }
+    #type{
+        float: right;
+        margin-right:540px;
+        height: 30px;
+    }
+    #display{
+        display: flex;
+        gap:10px;
+    }
+    .product-card {
+    width: 250px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px;
+    background-color: rgb(249, 249, 211);
+    
+    }
+    .product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    }
+    #btn{
+        background-color: rgb(231, 231, 162);
+        height: 30px;
+        width: 50px;
+        margin-bottom: 10px;
+    }
+  
+        
+</style>
+<body>
+    <div class="container">
+        <form id="frm">
+            <h1> THỜI TRANG NAM NỮ</h1>
+            <p >
+                <label>
+                    Image Product: <input type="text" name="iproduct" id="iproduct">
+                </label>
+            </p>
+            <p>
+                <label>
+                    Product Name: <input type="text" name="pname" id="pname">
+                </label>
+            </p>
+            <p>
+                <label>
+                    New Price: <input type="text" name="nprice" id="nprice">
+                </label>
+            </p>
+            <p>
+                <label>
+                    Old Price: <input type="text" name="oprice" id="oprice">
+                </label>
+            </p>
+            <p>
+                <label>
+                Type:<select name="type" id="type" style="background-color:rgb(231, 231, 162); border: 2px solid">
+                        <option value="">Chọn</option>
+                        <option value="man">Nam</option>
+                        <option value="woman">Nữ</option>
+                      </select>
+                </label>
+            </p>
+            <p>
+                <label>
+                    Code: <input type="text" name="code" id="code">
+                </label>
+            </p>
+            <p>
+                <button type="button" onclick="Add()" >ADD</button>
+            </p>
+        </form>
+        <div id="display">
+            <!-- <div id="productCard" class="product-card">
+                <img id="cardImage" src="" alt="Hình ảnh sản phẩm" style="display:none;">
+                <h3 id="cardName"></h3>
+                <p id="cardCode"></p>
+                <p id="cardNprice"></p>
+                <p id="cardOprice"></p>
+                <p id="btn">BUY</p>    
+            </div> -->
+    </div>
+    <script src="bt.js"></script>
+</body>
+</html>
